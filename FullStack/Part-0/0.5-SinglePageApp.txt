@@ -1,0 +1,15 @@
+0.5: Single Page App
+
+//THE INITIAL LOADING OF THE WEB PAGE//
+Browser--->Server: https://studies.cs.helsinki.fi/exampleapp/spa
+Server--->Browser: Server returns the HTML code
+
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/main.css
+Server--->Browser: Server returns main.css - Styling the web page
+
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server--->Browser: Server returns spa.js 
+
+//BROWSER STARTS EXECUTING JS - REQUESTS JSON DATA//
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/data.json
+//BROWSER EXECUTES EVENT HANDLER - RENDERS NOTES ON SCREEN//

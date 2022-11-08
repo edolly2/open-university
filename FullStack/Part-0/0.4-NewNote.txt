@@ -1,4 +1,4 @@
-title 0.4: New note
+0.4: New note
 
 //THE INITIAL LOADING OF THE WEB PAGE//
 Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/notes
