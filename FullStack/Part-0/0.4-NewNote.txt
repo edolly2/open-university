@@ -1,0 +1,31 @@
+title 0.4: New note
+
+//THE INITIAL LOADING OF THE WEB PAGE//
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/notes
+Server--->Browser: Server returns the HTML code
+
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/main.css
+Server--->Browser: Server returns main.css - Styling the web page
+
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/main.js
+Server--->Browser: Server returns main.js 
+
+//BROWSER STARTS EXECUTING JS - REQUESTS JSON DATA//
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/data.json
+
+//BROWSER EXECUTES EVENT HANDLER - RENDERS NOTES ON SCREEN//
+//USER WRITES NEW NOTE (HELLO WORLD!) AND HITS SUBMIT//
+Browser--->Server: HTTP POST Request - https://studies.cs.helsinki.fi/exampleapp/new_note
+Server--->Browser: Server returns status 302 - URL redirect, asks Browser for new GET to /notes
+
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/notes
+
+//BROWSERS RELOADS NOTES PAGE//
+Server--->Browser: Server returns the HTML code
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/main.css
+
+Server--->Browser: Server returns main.css - Styling the web page
+Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/main.js
+Server--->Browser: Server returns main.js 
+
+//BROWSER STARTS EXECUTING JS - REQUESTS JSON DATA//
