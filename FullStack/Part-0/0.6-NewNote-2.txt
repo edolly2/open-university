@@ -1,4 +1,4 @@
-0.5: Single Page App
+0.6: New Note 2
 
 //THE INITIAL LOADING OF THE WEB PAGE//
 Browser--->Server: https://studies.cs.helsinki.fi/exampleapp/spa
@@ -13,3 +13,8 @@ Server--->Browser: Server returns spa.js
 //BROWSER STARTS EXECUTING JS - REQUESTS JSON DATA//
 Browser--->Server: HTTP GET Request - https://studies.cs.helsinki.fi/exampleapp/data.json
 //BROWSER EXECUTES EVENT HANDLER - RENDERS NOTES ON SCREEN//
+
+//USER WRITES NEW NOTE AND HITS SUBMIT//
+Browser--->Server: HTTP POST Request - https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server--->Browser: Server returns status code 201
+//JS RE-RENDERS 
